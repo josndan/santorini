@@ -1,11 +1,17 @@
+Implementation details of the Commandline Santoini Game in C 
+
 Used an 6x6 2-D integer array(Gameboard) to store the whole board and initialized it with 2.
+
 Used four variables to describe the indices of the Player and AI position(two for each).
 With the indices of the player and AI, and 2-D array, displayed the value in the array except at
 the player and AI position where 'P' and 'A' would be displayed respectively.
+
 At the start of the game, the user is prompted to enter the initial position(in row column format) and reprompted until a valid position is entered.
 There is a main game loop, the program comes out of this loop only when AI's or player's score is at least 10.
+
 At the player's turn, user is prompted to enter the next move(in row column format) until the user enter a valid move.
 The Gameboard is updated based on the rules of the game(more details at the end).
+
 At the AI's turn, the AI loops through all the possible moves it can make and chooses the one that maximizes its score.
 When AI's or player's of the scores is greater than 9 the game ends.
 
